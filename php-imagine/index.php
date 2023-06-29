@@ -10,7 +10,6 @@ use Imagine\Image\Box;
 use Imagine\Image\ManipulatorInterface;
 use Imagine\Image\Palette\RGB;
 use Imagine\Image\Point;
-use Imagine\Image\Palette\ColorParser;
 
 $imagine = new Imagine();
 
