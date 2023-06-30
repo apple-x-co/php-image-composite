@@ -36,5 +36,6 @@ $canvas->text(
         $font->color('#000000');
     },
 );
+$canvas->mask(__DIR__ . '/../assets/mask2.jpg', false);
 
 $canvas->save(__DIR__ . '/./output/composited.png');
