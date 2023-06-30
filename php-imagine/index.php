@@ -41,5 +41,8 @@ $canvas->draw()->text(
     new Point(550, 300),
 );
 
+$mask = $imagine->open(__DIR__ . '/../assets/mask.jpg');
+
 $canvas->thumbnail(new Box(1200, 630), ManipulatorInterface::THUMBNAIL_OUTBOUND)
+       ->applyMask($mask)
        ->save(__DIR__ . '/./output/composited.png');
